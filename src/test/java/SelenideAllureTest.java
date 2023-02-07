@@ -20,12 +20,12 @@ import static org.openqa.selenium.By.linkText;
 
             open("https://github.com/");
             $(".header-search-input").click();
-            $(".header-search-input").sendKeys("ridarella/allure-example");
+            $(".header-search-input").sendKeys("ridarella13/allureTest");
             $(".header-search-input").submit();
 
-            $(linkText("ridarella/allure-example")).click();
+            $(linkText("ridarella13/allureTest")).click();
             $("#issues-tab").click();
-            $(withText("#80")).should(Condition.exist);
+            $(withText("#1")).should(Condition.exist);
         }
     }
 
